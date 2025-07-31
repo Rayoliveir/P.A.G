@@ -1,0 +1,426 @@
+/* Reset e Fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #110026, #1c003a);
+    color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(to right, #280538, #3c096c);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.logo-PAG img {
+    width: 48px;
+    height: 48px;
+}
+
+.titulo-PAG h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.link-paginas a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.link-paginas a:hover {
+    color: #fff;
+}
+
+.log-cad a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.botao-cadastrar {
+    background: linear-gradient(to right, #7928ca, #ff0080);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.botao-cadastrar:hover {
+    transform: scale(1.05);
+}
+
+/* Banner inicial */
+.intro-banner {
+    margin: 40px auto 10px;
+    padding: 8px 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 20px;
+    width: fit-content;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Título principal */
+.titulo-principal h1 {
+    font-size: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #a18cd1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+}
+
+/* Descrição */
+.descricao-plataforma {
+    text-align: center;
+    max-width: 720px;
+    margin: 20px auto;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* Botões principais */
+.botoes-acao {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botoes-acao button {
+    margin: 0 10px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.comecar-agora {
+    background-color: #5e60ce;
+    color: #fff;
+}
+
+.explorar-desafios {
+    background: transparent;
+    border: 2px solid #999;
+    color: #fff;
+}
+
+.comecar-agora:hover,
+.explorar-desafios:hover {
+    opacity: 0.9;
+}
+
+.categorias {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.categorias-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.categorias-header p {
+    color: #bbb;
+    margin-bottom: 30px;
+}
+
+.lista-categorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    align-items: center;
+}
+
+.categoria {
+    background-color: #1e0f3a;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    transition: transform 0.3s;
+}
+
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+.categoria img {
+    width: 48px;
+    margin-bottom: 10px;
+}
+
+.categoria h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+/* Seção Por que escolher */
+.escolha-PAG {
+    padding: 80px 10%;
+    background: #1a1035;
+    text-align: center;
+}
+
+.escolha-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.escolha-header p {
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+.motivos-escolha {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.motivo {
+    background: rgba(255,255,255,0.06);
+    padding: 25px;
+    border-radius: 16px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+.motivo img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* Destaques */
+.desafios-destaque {
+    padding: 60px 10%;
+    background: #100024;
+    text-align: center;
+}
+
+.desafios-destaque h2 {
+    margin-bottom: 10px;
+}
+
+.desafios-destaque p {
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.lista-destaques {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card-destaque {
+    background: rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 20px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.card-destaque:hover {
+    transform: scale(1.03);
+}
+
+/* CTA Final */
+.cta-final {
+    text-align: center;
+    padding: 50px 10%;
+    background: linear-gradient(to right, #7b2cbf, #5a189a);
+    border-radius: 20px;
+    margin: 50px auto;
+    color: #fff;
+}
+
+.cta-final h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cta-final p {
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.cta-final button {
+    background: #240046;
+    padding: 12px 28px;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #1e003a;
+    padding: 50px 10%;
+    color: #bbb;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer hr {
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid #444;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1024px) {
+    .lista-categorias,
+    .motivos-escolha,
+    .lista-destaques {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categoria,
+    .motivo,
+    .card-destaque {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .botoes-acao button {
+        margin-top: 10px;
+    }
+
+    .titulo-principal h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .link-paginas,
+    .log-cad {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .titulo-principal h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .descricao-plataforma {
+        font-size: 0.95rem;
+        padding: 0 15px;
+    }
+
+    .lista-categorias,
+    .motivos-escolha,
+    .lista-destaques {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categoria,
+    .motivo,
+    .card-destaque {
+        width: 90%;
+    }
+
+    .cta-final {
+        padding: 30px 20px;
+    }
+
+    .cta-final h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-final button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal h1 {
+        font-size: 1.7rem;
+    }
+
+    .intro-banner {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+
+    .botoes-acao button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .categoria,
+    .motivo,
+    .card-destaque {
+        width: 100%;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+    }
+
+    footer a {
+        font-size: 0.85rem;
+    }
+}
