@@ -1,0 +1,332 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-PAG {
+    display: flex;
+    align-items: center;
+}
+
+.logo-PAG img {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    border-radius: 8px;
+    margin-right: 0.75rem;
+}
+
+.titulo-PAG h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.link-paginas {
+    display: flex;
+    gap: 2rem;
+}
+
+.link-paginas a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.link-paginas a:hover {
+    color: #8b5cf6;
+}
+
+.link-paginas a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    transition: width 0.3s ease;
+}
+
+.link-paginas a:hover::after {
+    width: 100%;
+}
+
+.log-cad {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.log-cad a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.log-cad a:hover {
+    color: #8b5cf6;
+}
+
+.botao-cadastrar {
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.3);
+}
+
+.botao-cadastrar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -3px rgba(139, 92, 246, 0.4);
+}
+
+.botao-cadastrar a {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* estilização do main */
+main {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #f3f4f6 0%, #e0e7ff 100%);
+    padding: 3rem 1rem;
+}
+
+.login-container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.08), 0 1.5px 6px rgba(59, 130, 246, 0.08);
+    padding: 2.5rem 2rem;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3b82f6;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.login-form label {
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9fafb;
+    transition: border 0.2s;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #8b5cf6;
+    outline: none;
+}
+
+.login-form button[type="submit"] {
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px -2px rgba(139, 92, 246, 0.15);
+}
+
+.login-form button[type="submit"]:hover {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    box-shadow: 0 8px 20px -4px rgba(59, 130, 246, 0.18);
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+.login-links a {
+    color: #8b5cf6;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-links a:hover {
+    color: #3b82f6;
+}
+
+.botao-entrar{
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.3);
+}
+
+.campo-login {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campo-login input {
+    padding: 0.85rem 1rem;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    background: #f3f4f6;
+    font-size: 1rem;
+    color: #1f2937;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px -4px rgba(139, 92, 246, 0.08);
+}
+
+.campo-login input:focus {
+    border-color: #8b5cf6;
+    background: #e0e7ff;
+    outline: none;
+    box-shadow: 0 0 0 2px #c7d2fe;
+}
+
+.campo-login label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b5563;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.01em;
+}
+
+.campo-login input::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+    font-size: 0.98em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background: #1f2937;
+    color: white;
+    padding: 3rem 2rem 1rem;
+}
+
+footer > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.footer-sobre, .footer-plataforma, .footer-suporte {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sobre img, .footer-plataforma img, .footer-suporte img {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.footer-sobre h3, .footer-plataforma h3, .footer-suporte h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-sobre p {
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+.footer-plataforma a, .footer-suporte a {
+    color: #9ca3af;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-plataforma a:hover, .footer-suporte a:hover {
+    color: white;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background: #374151;
+    margin: 2rem 0 1rem;
+}
