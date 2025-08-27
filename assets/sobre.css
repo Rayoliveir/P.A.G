@@ -131,7 +131,7 @@ main {
 
 .sobre-introducao {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-top: 10%;
 }
 
 .sobre-introducao h1 {
@@ -186,6 +186,13 @@ main {
 
 .nossa-equipe {
     text-align: center;
+    margin: 4rem 0;
+    padding: 0 1rem;
+    margin-bottom: 5rem !important;
+    padding: 3rem 1rem;
+    position: relative;
+    margin-top: 15%;
+    
 }
 
 .nossa-equipe h2 {
@@ -211,7 +218,7 @@ main {
 }
 
 .card-membro {
-    background: #f3f4f6;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(59, 130, 246, 0.1));
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.1);
@@ -243,12 +250,16 @@ main {
     font-size: 1rem;
 }
 
-/* Footer Styles (Copied from home.css) */
 footer {
     background: #1f2937;
     color: white;
     padding: 3rem 2rem 1rem;
     margin-top: 4rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 footer > div:first-child {

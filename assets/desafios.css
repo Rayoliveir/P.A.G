@@ -311,12 +311,17 @@ main {
     font-size: 0.95rem;
 }
 
-/* Footer Styles (Copied from home.css) */
+
 footer {
     background: #1f2937;
     color: white;
     padding: 3rem 2rem 1rem;
     margin-top: 4rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 footer > div:first-child {
