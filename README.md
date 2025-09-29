@@ -1,57 +1,59 @@
-# 🕹️ P.A.G — Plataforma de Aprendizagem Gamificada
+# PagApp
 
-Projeto acadêmico desenvolvido com o objetivo de explorar a gamificação no processo de ensino e aprendizagem por meio de uma plataforma web simples, funcional e interativa.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
 
+## Development server
 
-## 📚 Sobre o Projeto
+To start a local development server, run:
 
-A P.A.G (Plataforma de Aprendizagem Gamificada) foi criada como parte de um Trabalho de Conclusão de Curso (TCC), com a proposta de unir educação e tecnologia por meio da gamificação. Ela simula um ambiente digital onde usuários podem:
-- Criar uma conta e fazer login.
-- Acessar desafios e testes de conhecimento.
-- Ver seu desempenho e competir em rankings.
-- Explorar informações sobre a plataforma e sua proposta.
+```bash
+ng serve
+```
 
-## 🎮 Funcionalidades
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-#### 🔐 Login e Cadastro
-Permite que usuários acessem a plataforma de forma individualizada.
-#### 🧩 Desafios Gamificados
-Testes e tarefas educativas organizadas como desafios para estimular o aprendizado.
-#### 🏆 Sistema de Ranking
-Pontuação baseada no desempenho dos usuários, criando um ambiente competitivo saudável.
-#### 📖 Página "Sobre"
-Informações sobre o projeto, seus autores e objetivos pedagógicos.
+## Code scaffolding
 
-## 🖥️ Tecnologias Utilizadas
-Este projeto foi desenvolvido utilizando apenas tecnologias front-end básicas, ideal para prototipagem e demonstração de conceito:
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
-- Angular
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-## 🚧 Status do Projeto
-#### 🔧 Em desenvolvimento
-O sistema atualmente é um protótipo estático. Isso significa que as telas e interfaces funcionam visualmente, mas não há banco de dados ou funcionalidades dinâmicas implementadas (como login real ou pontuação automática).
+```bash
+ng generate component component-name
+```
 
-## 💡 Próximos Passos (Planejados)
-- Adicionar interatividade com JavaScript.
-- Implementar sistema real de login e cadastro.
-- Criar banco de dados para usuários e pontuações.
-- Desenvolver painel administrativo para gerenciamento de desafios.
-- Integrar sistema de progressão com fases ou níveis.
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-## 👨‍💻 Autor
+```bash
+ng generate --help
+```
 
-Marcelly Oliveira
+## Building
 
-Desenvolvedora & Estudante de Tecnologia
+To build the project run:
 
-📧 marcellyoliveirads@gmail.com
+```bash
+ng build
+```
 
-🔗 www.github.com/Rayoliveir
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## 📜 Licença
+## Running unit tests
 
-Este projeto está disponível apenas para fins educacionais.
-Sinta-se livre para estudar, adaptar e contribuir!
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

@@ -1,0 +1,51 @@
+.card-destaque {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-destaque:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-destaque::before {
+  content: '⭐ Popular';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.card-destaque img {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.card-destaque.destaque-algoritmos img {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.card-destaque.destaque-logica-matematica img {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.card-destaque h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}

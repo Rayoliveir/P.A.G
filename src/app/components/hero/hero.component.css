@@ -1,0 +1,140 @@
+.hero-central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.intro-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    width: 400px;
+    margin-bottom: 2rem;
+    /* background: linear-gradient(135deg, #8b5cf6, #3b82f6); */
+    border-radius: 25px;
+    /* box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.3); */
+}
+
+.icon-estrela {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../../assets/images/estrela.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.intro-banner p {
+    color: rgb(90, 45, 255);
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Título Principal */
+.titulo-principal {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-principal h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-principal h1:first-child {
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Descrição da Plataforma */
+.descricao-plataforma {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    padding: 0 2rem;
+}
+
+.descricao-plataforma p {
+    font-size: 1.25rem;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+/* Botões de Ação */
+.botoes-acao {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+
+.comecar-agora,
+.explorar-desafios {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.comecar-agora {
+    background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(139, 92, 246, 0.3);
+}
+
+.comecar-agora:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -3px rgba(139, 92, 246, 0.4);
+}
+
+.explorar-desafios {
+    background: transparent;
+    color: #8b5cf6;
+    border: 2px solid #8b5cf6;
+}
+
+.explorar-desafios:hover {
+    background: #8b5cf6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .titulo-principal h1 {
+        font-size: 2.5rem;
+    }
+
+    .botoes-acao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comecar-agora,
+    .explorar-desafios {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-principal h1 {
+        font-size: 2rem;
+    }
+
+    .descricao-plataforma p {
+        font-size: 1.1rem;
+    }
+}

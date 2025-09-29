@@ -1,0 +1,15 @@
+<div class="login-container">
+    <h2>Entrar na Plataforma</h2>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="formulario">
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input class="campo-login" type="email" id="email" name="email" [(ngModel)]="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Senha:</label>
+            <input class="campo-senha" type="password" id="password" name="password" [(ngModel)]="password" required>
+        </div>
+    </form>
+    <button class="botao-entrar" type="submit">Entrar</button>
+    <p>Não tem uma conta? <a routerLink="/register">Cadastre-se aqui</a></p>
+</div>

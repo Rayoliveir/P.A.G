@@ -1,0 +1,56 @@
+.categoria {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #e5e7eb;
+}
+
+.categoria:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.categoria img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.categoria.programacao img {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+.categoria.matematica img {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.categoria.logica img {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.categoria.versionamento img {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+
+.categoria h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.categoria p:first-of-type {
+  color: #6b7280;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.categoria p:last-of-type {
+  color: #8b5cf6;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,52 @@
+.motivo {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  position: relative;
+}
+
+.motivo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.motivo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 16px 16px 0 0;
+}
+
+.motivo.conquistas::before {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+}
+
+.motivo.desafios-personalizados::before {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+}
+
+.motivo.comunidade::before {
+  background: linear-gradient(135deg, #10b981, #14b8a6);
+}
+
+.motivo.progresso::before {
+  background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+
+.motivo h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.motivo p {
+  color: #6b7280;
+  line-height: 1.6;
+}
